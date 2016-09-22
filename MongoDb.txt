@@ -1,0 +1,19 @@
+1)use my_first_db
+db.createCollection('students')
+2)db.students.find({lucky_number: {$gt: 3}})
+3)db.students.find().pretty()
+4)db.students.find({})
+5)db.students.insert({name: "John", home_state: "GA", lucky_number: 1, birthday: {month: 11, day: 16, year: 1984}})
+6)show collections
+7)show dbs
+8)db.students.remove({})
+9)db.students.update({})
+10)db.students.update({_id: ObjectId("5463d871a6a96d5ed6252f4d")}, {$set: {interests: 'basketball'}})
+11)db.students.update({_id: ObjectId("5463d871a6a96d5ed6252f4d")}, {$pull: {interests: 'Taxes'}})
+12)db.students.update({_id: ObjectId("5463d871a6a96d5ed6252f4d")}, {$set: {interests: 'Taxes'}})
+12)db.students.remove({name: "Chris"})
+13) db.students.remove({"_id" : ObjectId("57d6fae6d9e65acf68417231")}, true)
+14)db.students.update({_id: ObjectId("57d71393d9e65acf68417235")}, {$set: {number_of_belts: 0}})
+15)db.students.update({_id: ObjectId("57d71393d9e65acf68417235")}, {$inc: {number_of_belts: 1}})
+16) db.students.updateMany( {}, { $rename: { "number_of_belts": "belts_earned" } } )
+17)db.students.insert({updated_on: {month: 09, day: 12, year: 2016}})

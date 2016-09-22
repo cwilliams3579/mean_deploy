@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Rabbit</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+
+    <script>
+      $( document ).ready(function() {
+            setInterval(function() {
+                  $( "h1" ).effect( "shake" );
+            },3000);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Rabbits</h1>
+    <div id="input">
+      <% for (var rabbit in rabbits){ %>
+          <p>Name: <%= rabbits[rabbit].name %>, age: <%= rabbits[rabbit].age %><a href="/rabbit/<%= rabbits[rabbit]._id %>" method='get'> Show</a> | <a href="/rabbit/<%= rabbits[rabbit].id %>/edit" method="get"> Edit</a> | <form method="post" action="/rabbits/<%= rabbits[rabbit].id %>/destroy"><input id="index" type='submit' value="Delete <%= rabbits[rabbit].name %>"></form></p>
+      <% } %>
+      <h3><a href="/rabbit/new" method="get">Add a New Rabbit</a></h3>
+    </div>
+  </body>
+</html>

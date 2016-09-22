@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rabbit</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+            setInterval(function() {
+                  $( "h1" ).effect( "shake" );
+            },3000);
+      });
+    </script>
+ 
+  </head>
+  <body>
+    <h1>Meet <%= rabbit.name %>!</h1>
+    <div id="input">
+        <p>Name: <%= rabbit.name %>, age: <%= rabbit.age %></p>
+        <br>
+        <h3><a href="/">Home<a></h3>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Add a New Rabbit</title>
+    <!-- <link rel="stylesheet" href="/styles.css"> -->
+    <style type="text/css" media="screen">
+      body{
+          height: 500px;
+          width: 424px;
+          margin: 0 auto;
+          border: 2px solid black;
+          padding: 10px;
+          text-align: center;
+      }
+      #btn:hover{
+        background-color: green;
+      }
+      #btn{
+          border-radius: 20px;
+          height: 45px;
+          color: white;
+          background-color: #2196F3;
+          font-size: initial;
+          margin-top: 60px;
+          width: 200px;
+      }
+      input{margin-right: 15px; border: 1px solid blue;}
+    </style>
+    
+  </head>
+  <body>
+    <h1>Add a New Rabbit</h1>
+    <form action="/rabbits" method="post">
+      Name: <input type='text' name="name" placeholder="Enter rabbit name">
+      Age: <input  type='text' name='age' placeholder="Enter rabbit age">
+      <input id="btn" type='submit' value="Add a new rabbit" name="submit">
+    </form>
+    <br>
+    <h2><a href="/">Home</a></h2>
+  </body>
+</html>

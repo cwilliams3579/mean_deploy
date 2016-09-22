@@ -1,0 +1,33 @@
+body{
+    height: 500px;
+    width: 700px;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+#index:hover,#btn:hover{
+	background-color: green;
+}
+#btn{
+    border-radius: 20px;
+    height: 45px;
+    color: white;
+    background-color: #2196F3;
+    font-size: initial;
+    margin-top: 60px;
+    width: 200px;
+}
+
+
+input{
+  border-radius: 20px;
+  border: none;
+  margin-right: 15px;
+  height: 45px;
+  color: white;
+  background-color: #2196F3;
+  font-size: initial;
+  width: 200px;
+  margin-top: 60px;
+}
